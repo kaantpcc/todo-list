@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<div class="form-box">
+    <div class="form">
+        <h1>
+        <% const d = new Date() %>
+        <% let day = d.getDay() %>
+        <% let month = d.getMonth() %>
+        <% let monthDay = d.getDate() %>
+        <%= currentDay[day] %>, <%= currentMonth[month] %> <%= monthDay %>
+        </h1>
+
+        <form action="/" method="POST">
+            <div class="add-item">
+                <input class="toDoInput"  type="text" name="toDoName" placeholder="New Item" autocomplete="off" required>
+                <input class="submit-btn" type="submit" value="+">
+            </div>
+        </form>
+
+        <% for(let i = 0 ; i< toDoItem.length ; i++){ %>
+            <div class="list">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="checkboxButton" class="checkbox">
+                        <p class="text"> <%= toDoItem[i] %> </p>
+                    </li>
+                </ul>
+            </div>
+        <% } %>
+
+       
+    </div>
+</div>
+
+ <%- include("partials/footer.ejs") %>
+
+
+
+

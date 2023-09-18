@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+
+<div class="form-box">
+    <div class="form">
+        <h1>
+            Work List
+        </h1>
+
+        <form action="/work" method="POST">
+            <div class="add-item">
+                <input class="toDoInput"  type="text" name="workName" placeholder="New Item" autocomplete="off" required>
+                <input class="submit-btn" type="submit" value="+">
+            </div>
+        </form>
+
+        <% for(let i = 0 ; i< workItem.length ; i++){ %>
+            <div class="list">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="checkboxButton" class="checkbox">
+                        <p class="text"> <%= workItem[i] %> </p>
+                    </li>
+                </ul>
+            </div>
+        <% } %>
+
+       
+    </div>
+</div>
+
+
+ <%- include("partials/footer.ejs") %>
+
+
+
+

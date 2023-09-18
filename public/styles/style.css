@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+.nav-bar {
+    width: 100%;
+    padding: 30px;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-bar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #0F2C59;
+    font-size: 14px;
+}
+
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+
+.nav-bar ul li a svg{
+    margin-right: 5px;
+}
+
+.form-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box .form{
+    height: 600px;
+    width: 500px;
+    border: 2px solid #0F2C59;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+}
+
+.form-box .form::-webkit-scrollbar{
+    width: 0;
+}
+
+.form h1{
+    color: #0F2C59;
+    font-size: 30px;
+    margin: 25px auto;
+    border-bottom: 2px solid #0F2C59;
+}
+
+.form-box .form form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-box .form form .add-item{
+    display: flex;
+    align-items: center;
+    width: 75%;
+}
+
+.form-box .form form .add-item .toDoInput{
+    width: 75%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.form-box .form form .add-item .submit-btn{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-size: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0F2C59;
+    color: #fff;
+}
+
+.form-box .form form .submit-btn:hover{
+    -webkit-box-shadow: 10px 10px 30px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -16px rgba(0,0,0,0.75);
+}
+
+footer{
+    font-size: 14px;
+    color: #0F2C59;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.list{
+    width: 75%;
+    background-color: #fff;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.list ul{
+    list-style: none;
+}
+
+.list ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.list ul li p{
+    font-size: 14px;
+    color: #0F2C59;
+    font-weight: 500;
+}
+
+.checkbox:checked + p {
+    text-decoration: line-through;
+    color: #ababab;
+}
+
+@media screen and (max-width: 501px){
+
+    .form-box .form{
+        width: 90%;
+    }
+
+    .form-box .form h1{
+        font-size: 20px;
+    }
+
+    .form-box .form form .add-item .toDoInput{
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .form-box .form form .add-item .submit-btn{
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .list{
+        height: 35px;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
